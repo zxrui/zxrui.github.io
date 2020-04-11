@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Javascript | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.去除字符串前后空格123String.prototype.trim &#x3D; function () &amp;#123;     return this.replace(&#x2F;(^[ |　]*)|([ |　]*$)&#x2F;g, &quot;&quot;); &amp;#125; 2.合并数组(直接改变原有数组)：1234var a &#x3D; [4,5,6];var b &#x3D; [7,8,9];Array.prototype.push.apply(a,">
+  <meta name="description" content="1.去除字符串前后空格123String.prototype.trim &#x3D; function () &amp;#123;     return this.replace(&#x2F;(^[ |　]*)|([ |　]*$)&#x2F;g, &quot;&quot;); &amp;#125;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Javascript">
 <meta property="og:url" content="http://yoursite.com/2020/04/11/First/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.去除字符串前后空格123String.prototype.trim &#x3D; function () &amp;#123;     return this.replace(&#x2F;(^[ |　]*)|([ |　]*$)&#x2F;g, &quot;&quot;); &amp;#125; 2.合并数组(直接改变原有数组)：1234var a &#x3D; [4,5,6];var b &#x3D; [7,8,9];Array.prototype.push.apply(a,">
+<meta property="og:description" content="1.去除字符串前后空格123String.prototype.trim &#x3D; function () &amp;#123;     return this.replace(&#x2F;(^[ |　]*)|([ |　]*$)&#x2F;g, &quot;&quot;); &amp;#125;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-11T07:41:42.000Z">
-<meta property="article:modified_time" content="2020-04-11T08:02:57.391Z">
+<meta property="article:modified_time" content="2020-04-11T08:32:45.992Z">
 <meta property="article:author" content="梦欲南都">
 <meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
@@ -48,7 +48,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/images/avator.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">梦欲南都</a></h1>
@@ -98,7 +98,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/images/avator.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">梦欲南都</h1>
@@ -160,6 +160,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="1-去除字符串前后空格"><a href="#1-去除字符串前后空格" class="headerlink" title="1.去除字符串前后空格"></a>1.去除字符串前后空格</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>.prototype.trim = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/(^[ |　]*)|([ |　]*$)/g</span>, <span class="string">""</span>); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="2-合并数组-直接改变原有数组-："><a href="#2-合并数组-直接改变原有数组-：" class="headerlink" title="2.合并数组(直接改变原有数组)："></a>2.合并数组(直接改变原有数组)：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>];</span><br><span class="line"><span class="keyword">var</span> b = [<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>];</span><br><span class="line"><span class="built_in">Array</span>.prototype.push.apply(a, b);</span><br><span class="line">a; <span class="comment">// is: [4, 5, 6, 7, 8, 9]</span></span><br></pre></td></tr></table></figure>
 <h3 id="3-sort排序问题，不可思议"><a href="#3-sort排序问题，不可思议" class="headerlink" title="3.sort排序问题，不可思议"></a>3.sort排序问题，不可思议</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">10</span>];</span><br><span class="line"><span class="built_in">console</span>.log(a.sort());<span class="comment">//[1,10,2,5]</span></span><br><span class="line"><span class="comment">//使用函数形式</span></span><br></pre></td></tr></table></figure>
 <h3 id="4-转化类数组-》数组-arguments"><a href="#4-转化类数组-》数组-arguments" class="headerlink" title="4.转化类数组-》数组 :arguments"></a>4.转化类数组-》数组 :arguments</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);<span class="comment">//或</span></span><br><span class="line">[].slice.call(<span class="built_in">arguments</span>);<span class="comment">//或</span></span><br><span class="line"><span class="built_in">Array</span>.from(<span class="built_in">arguments</span>);<span class="comment">//或</span></span><br><span class="line"><span class="comment">//扩展运算符</span></span><br><span class="line">[...arguments];</span><br></pre></td></tr></table></figure>
