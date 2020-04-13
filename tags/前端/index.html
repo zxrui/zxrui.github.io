@@ -6,19 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Javascript | Hexo</title>
+  <title>Tag: 前端 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.去除字符串前后空格123String.prototype.trim &#x3D; function () &amp;#123;     return this.replace(&#x2F;(^[ |　]*)|([ |　]*$)&#x2F;g, &quot;&quot;); &amp;#125;">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Javascript">
-<meta property="og:url" content="http://yoursite.com/2020/04/11/First/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.去除字符串前后空格123String.prototype.trim &#x3D; function () &amp;#123;     return this.replace(&#x2F;(^[ |　]*)|([ |　]*$)&#x2F;g, &quot;&quot;); &amp;#125;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-11T07:41:42.000Z">
-<meta property="article:modified_time" content="2020-04-11T08:32:45.992Z">
 <meta property="article:author" content="梦欲南都">
-<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -161,110 +156,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-First" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Javascript
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/04/13/article/" class="archive-article-date">
+  	<time datetime="2020-04-13T02:20:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-13</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/04/13/article/">article</a>
     </h1>
   
 
-        
-        <a href="/2020/04/11/First/" class="archive-article-date">
-  	<time datetime="2020-04-11T07:41:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-去除字符串前后空格"><a href="#1-去除字符串前后空格" class="headerlink" title="1.去除字符串前后空格"></a>1.去除字符串前后空格</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>.prototype.trim = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/(^[ |　]*)|([ |　]*$)/g</span>, <span class="string">""</span>); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="2-合并数组-直接改变原有数组-："><a href="#2-合并数组-直接改变原有数组-：" class="headerlink" title="2.合并数组(直接改变原有数组)："></a>2.合并数组(直接改变原有数组)：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>];</span><br><span class="line"><span class="keyword">var</span> b = [<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>];</span><br><span class="line"><span class="built_in">Array</span>.prototype.push.apply(a, b);</span><br><span class="line">a; <span class="comment">// is: [4, 5, 6, 7, 8, 9]</span></span><br></pre></td></tr></table></figure>
-<h3 id="3-sort排序问题，不可思议"><a href="#3-sort排序问题，不可思议" class="headerlink" title="3.sort排序问题，不可思议"></a>3.sort排序问题，不可思议</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">10</span>];</span><br><span class="line"><span class="built_in">console</span>.log(a.sort());<span class="comment">//[1,10,2,5]</span></span><br><span class="line"><span class="comment">//使用函数形式</span></span><br></pre></td></tr></table></figure>
-<h3 id="4-转化类数组-》数组-arguments"><a href="#4-转化类数组-》数组-arguments" class="headerlink" title="4.转化类数组-》数组 :arguments"></a>4.转化类数组-》数组 :arguments</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);<span class="comment">//或</span></span><br><span class="line">[].slice.call(<span class="built_in">arguments</span>);<span class="comment">//或</span></span><br><span class="line"><span class="built_in">Array</span>.from(<span class="built_in">arguments</span>);<span class="comment">//或</span></span><br><span class="line"><span class="comment">//扩展运算符</span></span><br><span class="line">[...arguments];</span><br></pre></td></tr></table></figure>
-<h3 id="5-数据类型"><a href="#5-数据类型" class="headerlink" title="5.数据类型"></a>5.数据类型</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;));<span class="comment">//[object Function]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(&#123;&#125;));<span class="comment">//[object Object]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call([]));<span class="comment">//[object Array]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(<span class="keyword">new</span> <span class="built_in">RegExp</span>()));<span class="comment">//[object RegExp]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(<span class="number">1</span>));<span class="comment">//[object Number]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(<span class="string">'1'</span>));<span class="comment">//[object String]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(<span class="literal">undefined</span>));<span class="comment">//[object Undefined]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(<span class="literal">true</span>));<span class="comment">//[object Boolean]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(<span class="literal">null</span>));<span class="comment">//[object Null]</span></span><br></pre></td></tr></table></figure>
-<h3 id="6-字符串去重"><a href="#6-字符串去重" class="headerlink" title="6.字符串去重"></a>6.字符串去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> r=str.replace(<span class="regexp">/(.).*(\1)/g</span>,<span class="function"><span class="keyword">function</span>(<span class="params">$<span class="number">1</span>,$<span class="number">2</span></span>)</span>&#123;</span><br><span class="line">        $<span class="number">1</span> = $<span class="number">2</span>+$<span class="number">1.</span>substring(<span class="number">1</span>).replace(<span class="keyword">new</span> <span class="built_in">RegExp</span>($<span class="number">2</span>,<span class="string">'g'</span>),<span class="string">''</span>);</span><br><span class="line">        <span class="keyword">return</span> $<span class="number">1</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">if</span>(r.match(<span class="regexp">/(.).*(\1)/g</span>)!=<span class="literal">null</span>&amp;&amp;r.match(<span class="regexp">/(.).*(\1)/g</span>).length&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> fn(r);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> r;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="7-小数"><a href="#7-小数" class="headerlink" title="7.小数*"></a>7.小数*</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">multiply</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> reg = <span class="regexp">/\d*[\.\d]/</span>;</span><br><span class="line">    <span class="keyword">var</span> la = a.toString().replace(reg,<span class="string">""</span>).length,</span><br><span class="line">        lb = b.toString().replace(reg,<span class="string">""</span>).length;</span><br><span class="line">    <span class="keyword">return</span> (a*b).toFixed(la+lb);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2020/04/13/article/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          article
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/04/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">测试</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -287,9 +232,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
